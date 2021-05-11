@@ -30,10 +30,7 @@ namespace GenericsProgram
             Array.Sort(Number);
             return Number;
         }
-        void add(params int[] a) //specify a method parameter
-        {
 
-        }
 
         /// <summary>
         /// this method is created for finding max for given type
