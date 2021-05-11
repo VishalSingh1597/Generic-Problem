@@ -16,26 +16,26 @@ namespace GenericsProgram
         {
 
             Console.WriteLine("Welcome To Find MaximumProblem using Generics");
-            /// Int Value
+            Console.WriteLine();
 
-            //Console.WriteLine(MaximumNumbers.MaxIntNumber(786, 60, 212));
-            //Console.WriteLine(MaximumNumbers.MaxIntNumber(70, 733, 212));
-            //Console.WriteLine(MaximumNumbers.MaxIntNumber(943, 73, 3312));
+            int[] Output = { 11, 22, 50, 60, 90 };
+            Generic<int> genericInt = new Generic<int>(Output);//create object using int data type
+            genericInt.PrintValue();
+            Console.WriteLine();
 
-
-            ///Float values
-
-            //Console.WriteLine(MaximumNumbers.MaxFloatNumber(7.6f, 6.5f, 2.2f));
-            //Console.WriteLine(MaximumNumbers.MaxFloatNumber(7.6f, 66.5f, 3f));
-            //Console.WriteLine(MaximumNumbers.MaxFloatNumber(7.46f, 65.5f, 231.2f));
-
-
-            ///string 
-            Console.Write("Maximum String is : ");
-            string StringOutput = MaximumNumbers.StringMaximumNumber("Apple", "Peach", "Banana");
-            Console.Write(StringOutput);
-
+            double[] Output1 = { 11.2, 22.5, 50.45, 55.92 };
+            Generic<double> genericdouble = new Generic<double>(Output1);
+            genericdouble.PrintValue();
+            Console.WriteLine(
+                );
+            //String array
+            string[] stringArray = { "111", "222", "333", "55", "999" };
+            Generic<string> genericString = new Generic<string>(stringArray);
+            genericString.PrintValue();
             Console.Read();
+
         }
+
+
     }
 }
