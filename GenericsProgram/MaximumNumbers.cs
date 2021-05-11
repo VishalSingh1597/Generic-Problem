@@ -9,13 +9,13 @@ namespace GenericsProgram
     public class MaximumNumbers
     {
         /// <summary>
-        /// This method returns largest numbers among all 3 integer numbers 
+        /// This method returns largest numbers among all 3 float numbers 
         /// </summary>
-        /// <param name="firstValue">firstValue is of integer type</param>
-        /// <param name="secondValue">secondValue is of integer type</param>
-        /// <param name="thirdValue">thirdValue is of integer type</param>
+        /// <param name="firstValue">firstValue is of float type</param>
+        /// <param name="secondValue">secondValue is of float type</param>
+        /// <param name="thirdValue">thirdValue is of float type</param>
         /// <returns></returns>
-        public static int MaxIntNumber(int firstnumb, int secondnumb, int thirdnumb)
+        public static float MaxFloatNumber(float firstnumb, float secondnumb, float thirdnumb)
         {
             if (firstnumb.CompareTo(secondnumb) > 0 && firstnumb.CompareTo(thirdnumb) > 0)
             {
